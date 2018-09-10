@@ -22,9 +22,9 @@ module ExampleAgent
 
     def poll_cycle
       x = Time.now.to_f * hertz * Math::PI * 2
-      report_metric "SIN",     "Value", Math.sin(x) + 1.0
-      report_metric "COS",     "Value", Math.cos(x) + 1.0
-      report_metric "BIASSIN", "Value", Math.sin(x) + 5.0
+      report_metric "%SIN",     "Value", Math.sin(x) + 1.0
+      report_metric "%COS",     "Value", Math.cos(x) + 1.0
+      report_metric "%BIASSIN", "Value", Math.sin(x) + 5.0
     end
 
   end
